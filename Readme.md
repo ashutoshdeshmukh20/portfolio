@@ -26,7 +26,7 @@
 ✔️ Education\
 ✔️ Online Certification\
 ✔️ Experience\
-✔️ Projects \
+✔️ Blogs \
 ✔️ Skills \
 ✔️ Resume\
 ✔️ Contact Info
