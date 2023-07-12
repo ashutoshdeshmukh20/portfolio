@@ -444,6 +444,15 @@
           <label for="phone" style="display: block; margin-bottom: 5px; font-weight: bold;">Phone:</label>
           <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
           <br>
+          <label for="cname" style="display: block; margin-bottom: 5px; font-weight: bold;">Company:</label>
+          <input type="text" id="cname" name="cname" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
+          <br>
+          <label for="pname" style="display: block; margin-bottom: 5px; font-weight: bold;">Profile:</label>
+          <input type="text" id="pname" name="pname" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
+          <br>
+          <label for="lname" style="display: block; margin-bottom: 5px; font-weight: bold;">LinkedIn:</label>
+          <input type="text" id="lname" name="lname" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
+          <br>
           <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold;">Message:</label>
           <textarea id="message" name="message" required style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea>
           <br>
@@ -457,10 +466,13 @@
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var phone = document.getElementById("phone").value;
+            var cname = document.getElementById("cname").value;
+            var pname = document.getElementById("pname").value;
+            var pname = document.getElementById("lname").value;
             var message = document.getElementById("message").value;
       
             var subject = "We are having opening for [job title] profile in [Company Name] in [location]!";
-            var body = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message;
+            var body = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nCompany: " + cname + "\nProfile: " + pname + "\nLinkedIn: " + lname + "\nMessage: " + message;
       
             var mailtoLink = "mailto:ashutosh.deshmukh20@gmail.com" +
               "?subject=" + encodeURIComponent(subject) +
@@ -471,6 +483,9 @@
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
+            document.getElementById("cname").value = "";
+            document.getElementById("pname").value = "";
+            document.getElementById("lname").value = "";
             document.getElementById("message").value = "";
       
             alert("I'll get back to you soon");
